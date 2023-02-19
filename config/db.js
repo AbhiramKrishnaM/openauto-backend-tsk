@@ -30,4 +30,4 @@ async function startSequelize() {
   }
 }
 
-module.exports = { startSequelize };
+module.exports = { startSequelize, sequelize };
