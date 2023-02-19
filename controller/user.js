@@ -10,6 +10,7 @@ async function submitForm(req, res) {
     });
     res.status(201).json({ message: "Successfully added!" });
   } catch (error) {
+    console.log("This is error", error);
     res.status(500).json({ message: "Server error" });
   }
 }

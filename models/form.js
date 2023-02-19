@@ -12,11 +12,12 @@ const Form = sequelize.define("Form", {
   name: {
     type: DataTypes.STRING,
     allowNull: false,
+    unique: false,
   },
   email: {
     type: DataTypes.STRING,
     allowNull: false,
-    unique: true,
+    unique: false,
   },
 });
 
