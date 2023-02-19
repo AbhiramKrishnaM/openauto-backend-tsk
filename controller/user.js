@@ -8,9 +8,8 @@ async function submitForm(req, res) {
       name: req.body.name,
       email: req.body.email,
     });
-    res.status(201).json(newForm);
+    res.status(201).json({ message: "Successfully added!" });
   } catch (error) {
-    console.log("Error message", error);
     res.status(500).json({ message: "Server error" });
   }
 }
